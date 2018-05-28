@@ -10064,3 +10064,48 @@ p.acterms a {
   color: #f44a32;
   font-size: 20px;
 }
+
+@media only screen and (max-width: 780px) {
+	body.skin-ly.supplier-area-skin .site-wrapper .supplier-area-top{
+		padding: 0 15px;
+	}	
+	body.skin-ly.supplier-area-skin .site-wrapper .supplier-area-top h1{
+		margin-bottom: 20px;
+		width:100%;
+		clear: both;
+		}
+	body.skin-ly.supplier-area-skin .site-wrapper .supplier-area-top .button {
+		float: right;
+		width: 59px;
+		font-size: 12px;
+	}
+	body.skin-ly.supplier-area-skin .site-wrapper .supplier-area-top .button:last-child {
+		margin-right: 10px;
+		width: 150px;
+		font-size: 12px;
+	}
+	.supplier-area-form {
+    padding: 0 15px;
+}
+.supplier-area-form h5 {
+    clear: both;
+    margin-top: 20px;
+}
+.variend-des p {
+    padding-left: 5px;
+}
+.supplier-area-left .supplier-row.form-group{
+	padding-left: 0;
+}
+body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .variant-values{
+	width: 100%;
+}
+a.button.btn-grey.btn-no-shadow.load-page.btn-larger-width.btn-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+ul.pagination li,.pagination a {
+    font-size: 12px;
+    padding: 0px !important;
+}
+}
