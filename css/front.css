@@ -1138,12 +1138,13 @@ body.skin-ly .site-header .navbar .profile-icon {
 
 body.skin-ly .site-header .navbar .fa-search:before {
   font-size: 18px;
+  color: #4a4a4a;
 }
 
 @media only screen and (min-width: 1300px) {
   /* line 334, ../sass/screen.scss */
   body.skin-ly .site-header .navbar .fa-search:before {
-    font-size: 24px;
+    font-size: 24px;	
   }
 }
 
@@ -1157,6 +1158,7 @@ body.skin-ly .site-header .navbar .fa-shopping-cart {
 
 body.skin-ly .site-header .navbar .fa-shopping-cart:before {
   font-size: 23px;
+  color: #4a4a4a;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -1249,7 +1251,8 @@ body.skin-ly .site-header .navbar .profile-icon .user-menu-holder {
 @media only screen and (min-width: 1300px) {
   /* line 410, ../sass/screen.scss */
   body.skin-ly .site-header .navbar .profile-icon .user-menu-holder {
-    top: 20px;
+    top: 43px;
+	right: 62px;
   }
 }
 
@@ -2724,7 +2727,7 @@ form .form-group.floatlabel select:placeholder-shown:not(:focus)+*,
 .supplier-area-form .form-group.floatlabel input:placeholder-shown:not(:focus)+*,
 .supplier-area-form .form-group.floatlabel select:placeholder-shown:not(:focus)+* {
   font-size: 12px;
-  top: 10px;
+  top: 10px;                                                                                           fgfgfgfgfggfgfgg
   top: 10px;
 }
 
@@ -2734,7 +2737,7 @@ form .form-group.floatlabel select:placeholder-shown:not(:focus)+*,
   form .form-group.floatlabel select:placeholder-shown:not(:focus)+*,
   .supplier-area-form .form-group.floatlabel input:placeholder-shown:not(:focus)+*,
   .supplier-area-form .form-group.floatlabel select:placeholder-shown:not(:focus)+* {
-    font-size: 14px;
+    font-size: 14px;                                                                                                    fg
     top: 12px;
   }
 }
@@ -9218,9 +9221,12 @@ label.ovalshape~span {
   color: #000000;
   position: relative;
   top: 5px;
-  padding-left: 20px;
+  padding-left: 7px;
 }
 
+.supplier-area-left .supplier-form-box span {
+    top: 7px !important;
+}
 .row.myaccountdetails li {
   list-style-type: none;
   line-height: 50px;
