@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/select2.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <link rel="stylesheet" type="text/css" href="./css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="./css/uf-jqueryvalidation.css">
+    <link rel="stylesheet" type="text/css" href="./css/uf-alerts.css">
+    <link rel="stylesheet" type="text/css" href="./css/AdminLTE.css">
+    <link rel="stylesheet" type="text/css" href="./css/AdminLTE-skins-all.css">
+    <link rel="stylesheet" type="text/css" href="./css/userfrosting.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/front.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/content.css">
+
+</head>
+
+<body class="skin-ly layout-top-nav" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="">
+    <header class="site-header">
+        <div class="site-container">
+            <a class="logo load-page" data-url="">
+            </a>
+            <div class="hp-timer timer" data-seconds="36000">
+                <div class="timer-container timer-headerContainer">
+                    <div class="timer-contain">
+                        <div class="timer-sect">
+                            <div class="timer-top-half"></div>
+                            <div class="timer-bottom-half"></div>
+                            <div class="timer-join tleft"></div>
+                            <div class="timer-join tright"></div>
+                            <div class="timer-content">
+                                <h2 class="timer-number hours">09</h2>
+                                <p>
+                                    <i>hours</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timer-contain">
+                        <div class="timer-sect">
+                            <div class="timer-top-half"></div>
+                            <div class="timer-bottom-half"></div>
+                            <div class="timer-join tleft"></div>
+                            <div class="timer-join tright"></div>
+                            <div class="timer-content">
+                                <h2 class="timer-number minutes">53</h2>
+                                <p>
+                                    <i>minutes</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timer-contain">
+                        <div class="timer-sect last">
+                            <div class="timer-top-half"></div>
+                            <div class="timer-bottom-half"></div>
+                            <div class="timer-join tleft"></div>
+                            <div class="timer-join tright"></div>
+                            <div class="timer-content">
+                                <h2 class="timer-number seconds">42</h2>
+                                <p>
+                                    <i>seconds</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart load-page" data-url="cart">
+                    <span class="cart-count">3</span>
+                    <div class="notifier" data-type="cart"></div>
+                </i>
+                <div class="profile-icon">
+                    <a class="profile-img"></a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="user-menu-holder">
+                        <ul class="user-menu">
+                            <li>
+                                <a href="http://localhost:8080/alonso/my-account">Account</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost:8080/alonso/supplier">Supplier Area</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost:8080/alonso/admin">Admin Area</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost:8080/alonso/account/logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hambergerNav">
+                    <a class="menu-icon">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-wrapper site-wrapper" style="min-height: 294px;">
+        <div class="site-container">
+            <div class="ly-advertisement">
+                ADVERTISEMENT
+            </div>
+            <!-- listing start -->
+            <div class="body-loader">
+                <div class="row">
+                    <div class="col-md-12 featuedcontainer">
+                        <p class="Featured-Products">Featured Products</p>
+                        <input type="button" class="btn btn-default View-all-offers" value="View all offers">
+                        <input type="button" class="btn btn-default Filter-Products " value="Filter Products">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 breadcrumbContainer">
+                        <li>
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="#">Accesories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Sunglas</a>
+                                </li>
+                            </ol>
+                        </li>
+
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <form class="form-inline">
+                            <div class="form-group sortby-group">
+                                <label for="sel1">SORT BY</label>
+                                <select class="form-control" id="sel1">
+                                    <option>sample product</option>
+                                </select>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="product-listings">
+                    <div class="row mygrid">
+
+
+                        <div class="col-sm-4 col-md-4 col-xs-12 customwell" data-product-id="19" data-product-category="cars" data-product-slug="ford-fiesta">
+                            <div class="listing-holder">
+                                <div class="listing-border"></div>
+                                <div class="listing-percentage">
+                                    10%
+                                    <br>
+                                    <span>Off</span>
+                                </div>
+                                <div class="listing-top">
+                                    <div class="listing-active">
+                                        <span class="selected active">
+                                            <i class="fa fa-dot-circle-o"></i> Active
+                                        </span>
+                                        <span class="inactive">
+                                            <i class="fa fa-dot-circle-o"></i> Ended
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listing-main">
+                                    <div class="productImg">
+                                        <img src="http://localhost:8080/alonso/assets-raw/site/assets/img/placeholder.png" alt="" class="center-block img-responsive">
+                                    </div>
+                                    <div class="listing-title">
+                                        Ford Fiesta
+                                    </div>
+                                </div>
+
+
+                                <div class="margintb30">
+                                    <div class="col-md-half">
+                                        <div class="listing-price">
+                                            <h3 class="discountlayer">₡450,000.00</h3>
+                                            <h4 class="originallayer">₡
+                                                <strike>500,000.00</strike>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-half">
+                                        <input type="button" class="btn Add-to-cartbtn right" value="Add to card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-xs-12 customwell" data-product-id="19" data-product-category="cars" data-product-slug="ford-fiesta">
+                            <div class="listing-holder">
+                                <div class="listing-border"></div>
+                                <div class="listing-top">
+                                    <div class="listing-active">
+                                        <span class="selected active">
+                                            <i class="fa fa-dot-circle-o"></i> Active
+                                        </span>
+                                        <span class="inactive">
+                                            <i class="fa fa-dot-circle-o"></i> Ended
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listing-main">
+                                    <div class="productImg">
+                                        <img src="http://localhost:8080/alonso/assets-raw/site/assets/img/placeholder.png" alt="" class="center-block img-responsive">
+                                    </div>
+                                    <div class="listing-title">
+                                        Ford Fiesta
+                                    </div>
+                                </div>
+
+
+                                <div class="margintb30">
+                                    <div class="col-md-half">
+                                        <div class="listing-price">
+                                            <h3 class="discountlayer">₡450,000.00</h3>
+                                            <h4 class="originallayer">₡
+                                                <strike>500,000.00</strike>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-half">
+                                        <input type="button" class="btn Add-to-cartbtn right" value="Add to card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 col-xs-12 customwell" data-product-id="19" data-product-category="cars" data-product-slug="ford-fiesta">
+                            <div class="listing-holder">
+                                <div class="listing-border"></div>
+                                <div class="listing-top">
+                                    <div class="listing-active">
+                                        <span class="selected active">
+                                            <i class="fa fa-dot-circle-o"></i> Active
+                                        </span>
+                                        <span class="inactive">
+                                            <i class="fa fa-dot-circle-o"></i> Ended
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listing-main">
+                                    <div class="productImg">
+                                        <img src="http://localhost:8080/alonso/assets-raw/site/assets/img/placeholder.png" alt="" class="center-block img-responsive">
+                                    </div>
+                                    <div class="listing-title">
+                                        Ford Fiesta
+                                    </div>
+                                </div>
+
+
+                                <div class="margintb30">
+                                    <div class="col-md-half">
+                                        <div class="listing-price">
+                                            <h3 class="discountlayer">₡450,000.00</h3>
+                                            <h4 class="originallayer">₡
+                                                <strike>500,000.00</strike>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-half">
+                                        <input type="button" class="btn Add-to-cartbtn right" value="Add to card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="paginationcontainer">
+                    <ul class="pagination">
+                        <li class="defaultpage">
+                            <a href="#">Prev</a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li class="defaultpage">
+                            <a href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- listing end -->
+        </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
