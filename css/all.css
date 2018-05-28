@@ -588,3 +588,32 @@
         background-size: 240px 24px;
     }
 }
+
+
+
+a.button.btn.btn-no-shadow.load-page.add-product-btn {
+    background: none;
+    border: 1px solid #727272;
+}
+
+a.button.btn.btn-no-shadow.load-page.add-product-btn:hover{
+    background-color: #ff1000;
+    color: #ffffff;
+     border: 1px solid #fff;
+}
+
+i.fa.fa-question:before {
+    border: 1px solid #727272;
+    padding: 0px 3px;
+}
+i.fa.fa-question:hover::before{
+    color: #ffffff;
+     border: 1px solid #fff !important;
+
+}
+
+a.profile-img {}
+
+body.skin-ly .site-header .navbar .profile-icon .profile-img {
+    background: url('images/alonso-shopping.png');
+}
