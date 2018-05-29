@@ -7333,9 +7333,10 @@ table.product-table.order-table tr td .button {
 
 table.product-table.inventory-table tr td input[type="number"],
 table.product-table.order-table tr td input[type="number"] {
-  height: 30px;
+  height: 33px;
   text-align: center;
   min-width: 80px !important;
+  margin: 10px 20px;
 }
 
 /* line 2552, ../sass/front.scss */
@@ -9387,6 +9388,7 @@ span.pendingp {
   background: #ff6b61;
   padding: 5px;
   border-radius: 18.5px;
+  margin-top: 5px;
 }
 
 .switch a {
