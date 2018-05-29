@@ -10066,7 +10066,9 @@ p.acterms a {
   color: #f44a32;
   font-size: 20px;
 }
-
+a.button.btn-highlight.btn-no-shadow.load-page.normalbtn.normalbtncol.noboxshadow {
+    margin-top: 10px;
+}
 @media only screen and (max-width: 780px) {
 	body.skin-ly.supplier-area-skin .site-wrapper .supplier-area-top{
 		padding: 0 15px;
@@ -10106,6 +10108,17 @@ a.button.btn-grey.btn-no-shadow.load-page.btn-larger-width.btn-icon {
     margin-right: 0;
     margin-left: 10px;
 }
+.switch {
+	width: 100%;
+}
+.button.btn-small{
+    line-height: 29px;
+    min-width: 52px;
+}
+a.button.btn-highlight.btn-no-shadow.load-page.normalbtn.normalbtncol.noboxshadow {
+    margin-top: 6px;
+}
+.clearfilterbtn{ width:75%;}
 ul.pagination li,.pagination a {
     font-size: 12px;
     padding: 0px !important;
