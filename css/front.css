@@ -10123,5 +10123,13 @@ ul.pagination li,.pagination a {
     font-size: 12px;
     padding: 0px !important;
 }
-	table.product-table tr td a,table.product-table tr td a span{font-size: 12px;}
+table.product-table tr td a,table.product-table tr td a span{font-size: 12px;}
+.productfiltcontainer {
+    padding: 0 10px;
+}
+.productfiltcontainer .form-group.col-md-4 {
+    padding: 0 5px;
+}
+	
+	
 }
