@@ -10108,4 +10108,5 @@ ul.pagination li,.pagination a {
     font-size: 12px;
     padding: 0px !important;
 }
+	table.product-table tr td a,table.product-table tr td a span{font-size: 12px;}
 }
