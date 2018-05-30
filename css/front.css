@@ -2209,10 +2209,10 @@ input[type="submit"] {
   display: inline-block;
   font-size: 12px;
   font-weight: 300;
-  height: 35px;
+  height: auto;
   line-height: 35px;
   min-width: 120px;
-  padding: 0 20px;
+  padding: 6px 23px;
   position: relative;
   text-align: center;
   transition: background-color 0.1s, color 0.1s;
@@ -8280,6 +8280,7 @@ table.product-table.order-table tbody tr td[data-status][data-status="Complete"]
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
+  margin-bottom: 40px;
   color: #cdcdcd;
 }
 
@@ -9528,6 +9529,8 @@ tbody.supplier-product-table-holder a i {
   text-align: center;
   float: left;
   margin-right: 30px;
+  position: absolute;
+    margin-left: -65px;
 }
 
 .oveel .fa {
@@ -9541,6 +9544,8 @@ tbody.supplier-product-table-holder a i {
   display: block;
   overflow: hidden;
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 65px;
 }
 
 .cardtiles p {
@@ -9548,6 +9553,7 @@ tbody.supplier-product-table-holder a i {
   font-weight: 500;
   color: #000000;
   display: inline-block;
+  width: 70%;
 }
 
 .oveel.circleimg {
@@ -9556,7 +9562,7 @@ tbody.supplier-product-table-holder a i {
   margin-right: 10px;
 }
 
-.row.bgg .faqcontent {
+.faqcontent {
   opacity: 0.75;
   font-family: Lato;
   font-size: 14px;
@@ -9567,6 +9573,7 @@ tbody.supplier-product-table-holder a i {
   letter-spacing: normal;
   text-align: left;
   color: #616161;
+  padding-bottom: 30px;
 }
 
 .col-md-12.faqhead {
@@ -9613,7 +9620,8 @@ tbody.supplier-product-table-holder a i {
 }
 
 .col-md-12.faqhead {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  
 }
 
 .margintop20 {
@@ -9773,7 +9781,7 @@ button.commonbtn {
 }
 
 .contactusmsg {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .contactushead .oveel {
@@ -9823,6 +9831,7 @@ p.msgcoaption {
   color: #4a4a4a;
   font-size: 21px;
   line-height: 35px;
+  margin-bottom: 30px;
 }
 
 .positionunset {
@@ -10007,6 +10016,7 @@ form.myaccountform .form-group label {
 
 .supplier-area-form h5 {
   clear: both;
+  padding: 0 40px;
 }
 
 .signupcontainer.innerhome {
@@ -10132,4 +10142,84 @@ table.product-table tr td a,table.product-table tr td a span{font-size: 12px;}
 }
 	
 	
+}
+/*Newly added*/
+@media(max-width: 767px){
+  #register .notes .form-control, #register .form-control  {
+    width: 100% !important;
+}
+form .form-group.floatlabel {
+  width: 100%;
+}
+.form .form-group.floatlabel.notes {
+  width: 100%;
+}
+}
+
+
+
+form .form-group.floatlabel.notes {
+  width: 100%;
+}
+#register .notes .form-control{
+  width: 94% !important;
+}
+.checkoutright .row.listoforders {
+  border-bottom: 0;
+}
+.checkoutright ul {
+  list-style: none;
+  padding: 0 30px;
+}
+.checkoutright .row.listoforders {
+  border-bottom: 0;
+  padding: 10px 15px;
+}
+.checkoutright .listofsubtotal span {
+  float: right;
+}
+.checkoutright > h3 {
+  border-bottom: 1px solid #e8ebe9;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.listofsubtotal ul li:last-of-type {
+  border-top: 1px solid #e8ebe9;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.checkoutleft {
+  padding: 10px 0 10px 0;
+}
+form#register {
+  padding: 0 55px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+.backtoprodbtn.checkoutPage {
+  position: static !important;
+  margin: 20px 0;
+  padding: 11px 33px !important;
+  height: auto !important;
+}
+button:not([data-dismiss]):not([id*="mceu"]):not(.mce-open):not([role="presentation"]):not([hidefocus="1"])  i {
+  margin-right: 15px;
+}
+.faqcontainer .col-md-6:nth-of-type(2n) {
+  border-left: 1px solid #dedede;
+}
+.faqcontainer .faqList > div.col-md-6 {
+  padding: 0 90px;
+}
+.container.faqcontainer.bgg {
+  padding: 0;
+}
+.faqList .cardtiles p {
+  font-size: 18px;
+}
+.padd {
+  padding: 40px 60px 0px 60px;
 }
