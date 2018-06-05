@@ -6677,7 +6677,7 @@ body.skin-ly.supplier-area-skin .supplier-area-form .supplier-form-box {
   background-color: #ffffff;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.04);
   margin-bottom: 1px;
-  padding: 10px 15px 10px 15px;
+  padding: 20px 15px 20px 15px;
 }
 
 /* line 21, ../sass/_mixins.scss */
@@ -6841,7 +6841,7 @@ body.skin-ly.supplier-area-skin .supplier-area-form .variant-area:after {
 /* line 2181, ../sass/front.scss */
 
 body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .add-variant {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 /* line 2185, ../sass/front.scss */
@@ -7222,8 +7222,7 @@ table.product-table thead td {
 
 table.product-table tr td {
   border-bottom: 1px solid #E0E0E0;
-  line-height: 50px;
-  padding: 5px 0;
+  vertical-align: middle;
 }
 
 /* line 2478, ../sass/front.scss */
@@ -9547,7 +9546,7 @@ tbody.supplier-product-table-holder a i {
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
-  padding-left: 65px;
+  padding-left: 15px;
 }
 
 .cardtiles p {
@@ -9693,6 +9692,9 @@ tbody.supplier-product-table-holder a i {
 
 .sellleftcontainer {
   margin-top: 100px;
+}
+.sellrightcontainer {
+  border-left: 1px solid #dedede;
 }
 
 .sellleftcontainer .cardtiles {
@@ -10019,7 +10021,7 @@ form.myaccountform .form-group label {
 
 .supplier-area-form h5 {
   clear: both;
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 .signupcontainer.innerhome {
@@ -10147,7 +10149,77 @@ table.product-table tr td a,table.product-table tr td a span{font-size: 12px;}
 	
 }
 /*Newly added*/
+@media(max-width: 1300px) {
+  .col-sm-4.customwell {
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+.col-sm-4.customwell {
+  margin: 0px 20px;
+  width: 29%;
+}
+button:not([data-dismiss]):not([id*="mceu"]):not(.mce-open):not([role="presentation"]):not([hidefocus="1"]), .button, input[type="submit"] {
+  padding: 6px 10px;
+}
+
+}
+@media(max-width: 992px){ 
+  .supplier-area-form {
+    padding: 0 15px;
+}
+.col-sm-4.customwell {
+  width: 28%;
+}
+.col-sm-4.customwell {
+  margin: 0px 20px;
+  width: 28%;
+}
+.product-listings .col-md-half input {
+  width: 100%;
+}
+.product-listings .col-md-half {
+  width: 100%;
+}
+.col-sm-4 .listing-title {  
+  font-size: 22px;
+  padding: 25px 0px 15px 0px;
+}
+.originallayer {
+  font-size: 14px;
+}
+.discountlayer {
+  font-size: 18px;
+}
+div.bgg {
+  max-height: 100% !Important;
+}
+div.sellrightcontainer {
+  border-top: 1px solid #dedede;
+  border-left: 0;
+  padding-top: 70px;
+}
+.faqhead .btn {top: 50px;}
+}
 @media(max-width: 767px){
+  .container.sellcontainer {
+    margin-bottom: 70px;
+    padding: 0 35px;
+}
+.col-sm-4.customwell {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+  div.sellrightcontainer {
+    padding: 70px 20px 0 20px;
+}
+
+  ul.product-listings {
+    padding: 0 20px;
+}
+.product-listings .col-md-half {
+  width: 50%;
+}
   #register .notes .form-control, #register .form-control  {
     width: 100% !important;
 }
@@ -10157,6 +10229,30 @@ form .form-group.floatlabel {
 .form .form-group.floatlabel.notes {
   width: 100%;
 }
+body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .variant-values {
+  padding: 10px 0;
+}
+body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .variant-name {
+  width: 100%;
+}
+body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .variants-top .variant-name input, body.skin-ly.supplier-area-skin .supplier-area-form .variant-area .new-variant .variant-name input {
+  position: static;
+  width: 100%;
+}
+.new-variant.supplier-row.form-group {
+  padding-left: 55px;
+}
+.variantTable {
+  margin-top: 30px;
+}
+.supplier-row.form-group.has-feedback.wmce {
+  margin-left: 50px;
+}
+.pagination>li>a, .pagination>li>span {
+  letter-spacing: 0px;
+  padding: 0px 10px !important;
+}
+
 }
 
 
@@ -10259,4 +10355,68 @@ button:not([data-dismiss]):not([id*="mceu"]):not(.mce-open):not([role="presentat
 }
 .prod_inv_bgg {
   box-shadow: 0 13px 59px 0 rgba(80, 80, 80, 0.2);
+}
+.searchLable {
+  float: left;
+  line-height: 35px;
+  padding-right: 40px;
+}
+.supplier-form-box[data-for] .leftside label.ovalshape{
+  margin-bottom: 0;
+}
+.supplier-form-box[data-for] .leftside {
+  margin: 0;
+}
+body.skin-ly.supplier-area-skin .supplier-area-form .supplier-form-box .supplier-row {
+  margin-bottom: 0;
+}
+body.skin-ly.supplier-area-skin .supplier-area-form .supplier-form-box[data-for] .supplier-row.title-row {
+  padding-top: 0;
+}
+.supplier-form-box[data-for] .leftside span {
+  margin-top: 5px;
+    float: right;
+}
+.supplier-form-box[data-for] .leftside+a {
+  margin-top: 10px;
+    float: right;
+}
+.new-variants {
+  padding-bottom: 15px;
+}
+.supplier-area-form .dropdownVal h5 > span {
+  float: left;
+  position: static;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 0;
+}
+.supplier-area-form .dropdownVal h5 > p {
+  float: left;
+  clear: both;
+}
+.supplier-area-form .dropdownVal h5 {
+  position: relative;
+  padding-left: 60px;
+}
+.supplier-area-form .dropdownVal h5 > label.ovalshape {
+  position: absolute;
+  left: 10px;
+}
+.variantTable {
+  padding-left: 50px;
+}
+label[for='sel1'] {
+  padding-right: 15px;
+  float: left;
+  line-height: 34px;
+}
+.sellrightcontainer {
+  padding: 0 130px 0 70px;
+}
+button.commonbtn.sellButton {
+  margin-top: 20px;
+}
+.container.sellcontainer {
+  margin-bottom: 70px;
 }
