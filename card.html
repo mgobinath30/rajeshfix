@@ -123,7 +123,7 @@
             <!-- listing start -->
             <div class="supplier-area-top">
                 <h1>Shopping cart (6)</h1>
-                <a class="button btn-highlight btn-no-shadow load-page newbtn suplierbtn" data-url="supplier/products/new">Add product</a>
+                <a class="button btn-highlight btn-no-shadow load-page normalbtn normalbtncol noboxshadow" data-url="supplier/products/new">Back to product</a>
             </div>
             <div class="supplier-product-list suppliertab">
 
@@ -142,13 +142,16 @@
                                             <a class="load-page" data-url="">Male, M, Black</a>
                                         </td>
                                         <td>
-                                            <input type="number">
+                                                <div class="incButton">                                       
+                                                        <button class="minus">-</button>
+                                                        <input type="text">
+                                                                 <button class="plus">+</button></div>
                                         </td>
                                         <td>
-                                            <p class="ffprice">2x € 99,90</p>
+                                            <p class="ffprice totalPrice">€ 99,90</p>
                                         </td>
                                         <td>
-                                            <p class="fprice">2x € 99,90</p>
+                                            <p class="fprice totalPrice">€ 99,90</p>
                                         </td>
                                        
                                         <td class="status">
@@ -159,7 +162,8 @@
 
                                         </td>
                                      
-                                        <td>
+                                        <td align="right">
+                                                <span class="totalPrice">
                                             <a class="button btn-highlight btn-no-shadow load-page normalbtn normalbtncol noboxshadow" data-url="my-account/history">
                                                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                                 Customize</a>
@@ -167,11 +171,24 @@
                                             <a class="button btn-highlight btn-no-shadow load-page normalbtn normalbtncol noboxshadow" data-url="my-account/history">
                                                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
                                                 Remove</a>
+                                                </span>
                                         </td>
                                     </tr>
 
 
                                 </tbody>
+                                <tfoot>
+                                        <tr><td colspan="3"></td>
+                                        <td>Total:</td>
+                                        <td><span class="totalPrice">€ 199,90</span></td>
+                                        <td>
+                                        <span class="fper">Subtotal lorem</span>
+                                        <span class="fper"><span class="totalPrice">€ 99,90</span><span>5%</span></span>
+                                    </td>
+                                        <td><a class=" buyNow button btn-highlight btn-icon btn-no-shadow load-page plainbtn" data-url="my-account">
+                                                                <i class="fa fa-cogs"></i>Buy Now</a></td>
+                                    
+                                    </tr></tfoot>
                             </table>
                         </div>
                     </div>
