@@ -9067,7 +9067,8 @@ table.product-table tr td.name a {
   border-radius: 2px;
   font-size: 16px;
   text-align: center;
-  padding: 5px 20px;
+  padding: 0 20px;
+  float: right;
   height: auto !important;
   border: transparent;
 }
@@ -9231,7 +9232,7 @@ label.ovalshape~span {
 }
 .row.myaccountdetails li {
   list-style-type: none;
-  line-height: 50px;
+  line-height: 35px;
   display: inline-block;
   width: 100%;
 }
@@ -9245,15 +9246,18 @@ span.lefttd {
 
 span.righttd {
   color: #000000;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 15px;
   float: right;
   width: 60%;
   text-align: left;
+  padding-right: 15px;
+    word-wrap: break-word;
 }
 
 .row.myaccountdetails {
   padding: 0px;
+  padding-right: 20px;
 }
 
 .myaccountdetails .col-md-6 {
@@ -9261,7 +9265,7 @@ span.righttd {
 }
 
 .myaccountdetails ul {
-  padding-left: 40px;
+  padding-left: 0;
 }
 
 .orderhistorytable th {
@@ -9512,7 +9516,7 @@ tbody.supplier-product-table-holder a i {
   box-shadow: 0 13px 59px 0 rgba(80, 80, 80, 0.2);
   margin-top: 30px;
   padding: 40PX;
-  max-height: 747px !important;
+ /* max-height: 747px !important;*/
 }
 
 /* old */
@@ -9771,9 +9775,17 @@ button.commonbtn {
 .oveel.contactiocnleft {
   margin-right: 0px !important;
 }
-
+.contactusleft .oveel.contactiocnleft {
+  position: absolute;
+  left: 0;
+}
+.contactusleft .contactiocnright {
+  float: right;
+  width: 100%;
+}
 .contactusleft .cardtiles {
-  padding: 20px;
+  padding: 20px 20px 20px 55px;
+  position: relative;
 }
 
 .imgcontainer img {
@@ -10075,6 +10087,7 @@ p.acterms a {
 
 .checkoutcardtab .button {
   font-size: 12px;
+  padding: 0 23px;
 }
 
 .checkoutcardtab p.fprice {
@@ -10167,6 +10180,32 @@ button:not([data-dismiss]):not([id*="mceu"]):not(.mce-open):not([role="presentat
   .supplier-area-form {
     padding: 0 15px;
 }
+.row.bgg.privacyPage {
+  margin: 0 10px;
+}
+.account-box .main .account-left {
+  width: 100%;
+  padding-left: 0;
+}
+.account-box .main .account-right {
+  width: 100%;
+  border-left: 0;
+  padding-left: 0;
+  border-top: 1px solid #E0E0E0;
+}
+div.faqcontainer .faqList .col-md-6:nth-of-type(2n) {
+  border-left: 0;
+}
+div.container.faqcontainer.bgg {
+  padding: 0;
+  margin: 30px 15px;
+}
+div.faqcontainer .faqList > div.col-md-6 {
+  padding: 0 40px;
+}
+.col-md-5.contactusleft {
+  margin-left: -7px;
+}
 .col-sm-4.customwell {
   width: 28%;
 }
@@ -10198,12 +10237,38 @@ div.sellrightcontainer {
   border-left: 0;
   padding-top: 70px;
 }
-.faqhead .btn {top: 50px;}
+.successWrap .col-md-7.contactusleftright.bgg {
+  margin: 30px 15px;
+}
+div.successPurchase .contactussuccontainer {
+  border-left: 0;
+  margin-top: 50px;
+  border-top: 1px solid #dedede;
+}
+.faqhead .btn {    top: 0;
+  position: static !important;}
 }
 @media(max-width: 767px){
   .container.sellcontainer {
     margin-bottom: 70px;
     padding: 0 35px;
+}
+.col-md-5.contactusleft {
+  margin-left: 0;
+}
+.container.faqcontainer.testimonials {
+  margin: 0px 20px 20px 20px;
+}
+table span.fper {
+  width: 100%;
+}
+.col-md-7.contactusleftright.bgg {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+table .fper > span {
+  padding-left: 0;
 }
 .col-sm-4.customwell {
   margin: 0;
@@ -10419,4 +10484,90 @@ button.commonbtn.sellButton {
 }
 .container.sellcontainer {
   margin-bottom: 70px;
+}
+.iconAlignment {
+  position: relative;
+  padding-left: 50px;
+}
+.iconAlignment .contactiocnleft {
+  position: absolute;
+  left: 0;
+}
+.iconAlignment .contactiocnright {
+  float: left;
+  width: 100%;
+}
+.successPurchase .contactussuccontainer {
+  min-height: 330px;
+}
+.successPurchase .modal-body {
+  padding: 30px 15px;
+}
+.paddMaintanence {
+  padding-top: 50px;
+}
+.successPurchase .contactussuccontainer {
+  border-left: 1px solid #dedede;
+}
+.successPurchase .contactussuccontainer {
+  min-height: 330px;
+}
+.testimonials .cardtiles {
+  position: relative;
+  padding-left: 86px;
+  line-height: 66px;
+}
+.testimonials .oveel.circleimg {
+  position: absolute;
+  left: 0;
+}
+.testimonials .cardtiles > p {
+  display: inline;
+}
+
+.incButton button:not([data-dismiss]):not([id*="mceu"]):not(.mce-open):not([role="presentation"]):not([hidefocus="1"]) {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 6px 15px;
+  min-width: 1px;
+  line-height: normal;
+}
+.incButton input {
+  width: 25px;
+}
+.incButton > * {
+  float: left;
+}
+.checkoutcardtab td p {margin: 0}
+table.product-table tfoot tr td {
+  border-bottom: 0;
+}
+.totalPrice {
+  white-space: nowrap;
+}
+span.fper {
+  float: left;
+  width: 50%;
+}
+.fper > span {
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+}
+.checkoutcardtab a.button.buyNow {
+  float: right;
+  padding: 0 65px;
+}
+.incButton {
+  width: 100px;
+}
+.container.faqcontainer.bgg {
+  max-height: 100% !important;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.faqList .cardtiles {
+  position: relative;
+  padding-left: 65px;
 }
