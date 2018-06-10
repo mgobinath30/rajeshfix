@@ -31,8 +31,10 @@
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="front-nav">
-            <a class="button side-link  btn-no-shadow sidenavbtn" data-popup="signup">Sign up</a>
-            <a class="button side-link  btn-no-shadow sidenavbtn sidenavbtn-inactive" data-popup="login">Log in</a>
+            <a class="button side-link  btn-no-shadow hidden-sm hidden-xs sidenavbtn" data-popup="signup">Sign up</a>
+            <a class="button side-link  btn-no-shadow sidenavbtn hidden-sm hidden-xs sidenavbtn-inactive" data-popup="login">Log in</a>
+	<a class="side-link mobileSignUp visible-sm visible-xs btn-no-shadow" data-popup="signup">Sign up</a>
+            <a class="side-link hide mobileLoginIn btn-no-shadow sidenavbtn-inactive" data-popup="login">Log in</a>
         </nav>
     </header>
 
@@ -50,7 +52,7 @@
                             <li class="active">
                                 <a data-toggle="tab" href="#signuptap">Sign Up</a>
                             </li>
-                            <li>
+                            <li class="hidden-sm hidden-xs">
                                 <a data-toggle="tab" href="#signintab">Log in</a>
                             </li>
 
@@ -64,21 +66,21 @@
                                     <input type="hidden" name="csrf_value" value="c1867af43c192b0154246da7cef96159">
                                     <div class="form-alerts" id="alerts-page"></div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="text" class="form-control" placeholder="Username *" name="user_name" autocomplete="off" id="f_user_name" required=""
+                                        <input type="text" class="form-control" name="user_name" autocomplete="off" id="f_user_name" required=""
                                             autofocus="" aria-required="true">
-                                        <label for="f_user_name">Username *</label>
+                                        <label for="f_user_name">Hint text</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="text" class="form-control" placeholder="Email *" name="email" autocomplete="off" id="f_email" required="" aria-required="true">
+                                        <input type="text" class="form-control" name="email" autocomplete="off" id="f_email" required="" aria-required="true">
                                         <label for="f_email">Email *</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="password" class="form-control" placeholder="Password *" name="password" autocomplete="new-password" id="f_password"
+                                        <input type="password" class="form-control" name="password" autocomplete="new-password" id="f_password"
                                             required="" aria-required="true">
                                         <label for="f_password">Password *</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="password" class="form-control" placeholder="Confirm *" name="passwordc" autocomplete="new-password" id="f_confirm">
+                                        <input type="password" class="form-control" name="passwordc" autocomplete="new-password" id="f_confirm">
                                         <label for="f_confirm">Confirm *</label>
                                     </div>
                                     <div class="terms extrapadding">
@@ -103,7 +105,7 @@
                                     <!--<div class="row grey-line extrapadding">
                                         <span>or</span>
                                     </div> -->
-                                    <div class="col-md-11">
+                                    <div class="socialBlock">
                                         <div class="goleft fbook">
                                             <button type="submit" class="btn-highlight btn-no-shadow newbtn">
                                                 Sign up with facebook
@@ -129,21 +131,21 @@
                                     <input type="hidden" name="csrf_value" value="c1867af43c192b0154246da7cef96159">
                                     <div class="form-alerts" id="alerts-page"></div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="text" class="form-control" placeholder="Username *" name="user_name" autocomplete="off" id="f_user_name" required=""
+                                        <input type="text" class="form-control" name="user_name" autocomplete="off" id="f_user_name" required=""
                                             autofocus="" aria-required="true">
                                         <label for="f_user_name">Username *</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="text" class="form-control" placeholder="Email *" name="email" autocomplete="off" id="f_email" required="" aria-required="true">
+                                        <input type="text" class="form-control" name="email" autocomplete="off" id="f_email" required="" aria-required="true">
                                         <label for="f_email">Email *</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="password" class="form-control" placeholder="Password *" name="password" autocomplete="new-password" id="f_password"
+                                        <input type="password" class="form-control" name="password" autocomplete="new-password" id="f_password"
                                             required="" aria-required="true">
                                         <label for="f_password">Password *</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input type="password" class="form-control" placeholder="Confirm *" name="passwordc" autocomplete="new-password" id="f_confirm">
+                                        <input type="password" class="form-control" name="passwordc" autocomplete="new-password" id="f_confirm">
                                         <label for="f_confirm">Confirm *</label>
                                     </div>
 
@@ -155,10 +157,7 @@
                                         <label>Spiderbro</label>
                                         <input name="spiderbro" id="spiderbro" value="http://">
                                     </div>
-                                    <div class="row grey-line extrapadding">
-                                        <span>or</span>
-                                    </div>
-                                    <div class="row">
+                                    <div class="socialBlock">
                                         <div class="goleft fbook">
                                             <button type="submit" class="btn-highlight btn-no-shadow newbtn">
                                                 Sign up with facebook
@@ -185,8 +184,8 @@
                     <div class="timer-pad">
                         <h1>The
                             <i>Best</i> Deals Online!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adispicing elit,
-                            <br>sed do eiusmod tempor incidunt ut labore et dolore</p>
+                        <p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adispicing elit,
+                            sed do eiusmod tempor incidunt ut labore et dolore</p>
                         <div class="timer-container">
                             <div class="timer-contain">
                                 <div class="timer-sect">
@@ -232,7 +231,7 @@
                                 </div>
                             </div>
 
-                            <div class="timer-bottom">
+                            <div class="timer-bottom hidden-sm hidden-xs">
                                 <a class="side-link Keep-me-notified btn-no-shadow" data-popup="notified">Keep me notified</a>
                                 <a class="side-link How-it-works btn-no-shadow" data-popup="howitworks">How it works?</a>
                             </div>
