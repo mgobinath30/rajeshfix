@@ -131,7 +131,9 @@
                     </div>
 
                     <div class="supplier-area-form">
-                            <div class="supplier-area-left">
+<div class="row">
+<div class="col-md-7">
+                            <div class="letShadow supplier-area-left mb-30">
                                 <div class="supplier-form-box">
                                 <h5>
                                         <label class="ovalshape">
@@ -141,7 +143,7 @@
                                     </h5>
                                     
                                     <div class="form-group has-feedback floatlabel productnamediv">
-                                        <input name="name" id="f-name" type="text" class="form-control" placeholder="Product name" required="">
+                                        <input name="name" id="f-name" type="text" class="form-control" required="">
                                         <label for="f-name">Product name</label>
                                     </div>
                         
@@ -158,7 +160,7 @@
                                         </label>
                                         <span>Product Photos</span>
                                     </h5>
-                                        <a class="photo-click">Upload Photo</a>			</div>
+                                        <a class="photo-click greyTrans">Upload Photo</a>			</div>
                                     <div class="img-grid supplier-grid">
                             <form action="http://localhost:8080/alonso/api/images/upload" class="dropzone photo-uploader dz-started dz-clickable" id="product-photo-uploader" method="POST" enctype="multipart/form-data" data-maxfiles="">
                                 <input type="hidden" name="csrf_name" value="csrf5ae81f22691b5">
@@ -176,7 +178,7 @@
                                         </span>
                                                             Add variants if this product comes in multiple versions, like different sizes or colours.</p>
                                     </h5>
-                                                                        <a class="variant-click">Cancel</a>
+                                                                        <a class="mb-30 orangeTrans variant-click">Cancel</a>
                                                     </div>
                                                     <div class="supplier-row variend-des">
                                             
@@ -186,7 +188,7 @@
                                 <div class="variants-holder">
                                 <div class="new-variant supplier-row form-group">
                             <div class="variant-name">
-                                <input name="variant_name" type="text" class="form-control" placeholder="Option name">
+                                <input name="variant_name" type="text" class="form-control">
                             </div>
                             <div class="variant-values">
                                 <div class="tag-area tag-initialised">
@@ -196,7 +198,7 @@
                                         <li>Red <i class="fa fa-times right" aria-hidden="true"></i>
                         </li>
                                     </ul>
-                                    <input type="text" placeholder="Seperate options with a comma" class="form-control tag-input">
+                                    <input type="text" class="form-control tag-input">
                                 </div>
                             </div>
                             <div class="variant-trash">
@@ -227,7 +229,7 @@
                                     </thead>
                             <tbody>
                                         <tr>
-                                <td><input type="checkbox" checked="checked"></td>
+                                <td><lable class="orangeText"><input type="checkbox" checked="checked">Black</label></td>
                                 <td><input type="text" name="v_sku" class="form-control"></td>
                                 <td><input type="text" name="v_barcode" class="form-control"></td>
                                 <td><input type="text" name="quantity" value="0" class="form-control"></td>
@@ -240,7 +242,9 @@
                         </div></div>
                                             </div>
                             </div>
-                            <div class="supplier-area-right">
+</div>
+<div class="col-md-5">
+                            <div class="supplier-area-right letShadow">
                                         <div class="supplier-form-box box-highlight">
                                     <div class="supplier-row title-row">
                                         <strong>Feature your product?</strong>
@@ -285,11 +289,11 @@
                         </span>When you have entered your original/discount price, and selected a category, you will be shown the final price for customers to be displayed on the site minus our fees.</p>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input name="price" id="f-price" type="text" class="form-control" placeholder="Original Price (₡)">
+                                        <input name="price" id="f-price" type="text" class="form-control"">
                                         <label for="f-price">Original Price (₡)</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input name="discount_price" id="f-discount_price" type="text" class="form-control" placeholder="Discount Price (₡)">
+                                        <input name="discount_price" id="f-discount_price" type="text" class="form-control">
                                         <label for="f-discount_price">Discount Price (₡)</label>
                                     </div>
                                     <div class="supplier-row form-group fee-calculation">
@@ -305,21 +309,22 @@
                                         <strong>Inventory</strong>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input name="total_quantity" id="f-quantity" type="number" class="form-control" placeholder="Quantity">
+                                        <input name="total_quantity" id="f-quantity" type="number" class="form-control">
                                         <label for="f-quantity">Quantity</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input name="sku" id="f-sku" type="text" class="form-control" placeholder="SKU (Stock Keeping Unit)">
+                                        <input name="sku" id="f-sku" type="text" class="form-control">
                                         <label for="f-sku">SKU (Stock Keeping Unit)</label>
                                     </div>
                                     <div class="form-group has-feedback floatlabel">
-                                        <input name="barcode" id="f-barcode" type="text" class="form-control" placeholder="Barcode (ISBN, UPC, GTIN, etc.)">
+                                        <input name="barcode" id="f-barcode" type="text" class="form-control">
                                         <label for="f-barcode">Barcode (ISBN, UPC, GTIN, etc.)</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+</div>
+</div>
                     <div class="supplier-area-top butt">
                         <a class="button btn-highlight btn-no-shadow save-product">Save Product</a>
                         <a class="button btn-grey btn-no-shadow load-page btn-larger-width btn-icon" data-url="supplier/products">
